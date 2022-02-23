@@ -1,0 +1,119 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue-desaturated: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+
+    color: var(--dark-grayish-blue); 
+    background-color: var(--dark-cyan);
+    background-image: url(/assets/images/bg-pattern-top.svg),
+                      url(/assets/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: right 950px bottom 350px, left 900px top 450px;
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+}
+.top-card-img{
+    margin-bottom: 78px;
+    line-height: 0;
+
+    background-color: tomato;
+}
+
+.profile-container{
+    margin-bottom: 25px;
+}
+
+.img-profile{
+    position: absolute;
+    top: 92px;
+    left: 127px;
+
+    border-radius: 60px;
+    border: solid white 5px;
+}
+
+.profile-info,
+.stats-qty{
+    margin-bottom: 5px;
+}
+
+.profile-name,
+.stats-qty{
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    color: var(--dark-blue-desaturated);
+}
+
+.profile-name{
+    margin-right: 5px; 
+}
+
+.profile-location{
+    font-size: 14px;
+}
+
+.profile-stats{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    border-top: 1px solid rgba(106, 111, 129, 0.3);
+}
+
+.stats-title{
+    font-size: 0.625rem;
+    letter-spacing: 1.5px;
+}
+
+[class*="box"]{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+}
+
+@media screen and (max-width:1440px) {
+    body{
+        background-position: right 700px bottom 300px, left 650px top 450px;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    body{
+        background-position: right 450px bottom 400px, left 400px top 500px;
+
+    }
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-position: right 250px bottom 550px, left 250px top 500px;
+        background-size: contain;
+    }
+}
+
