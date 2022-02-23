@@ -20,8 +20,8 @@ body{
 
     color: var(--dark-grayish-blue); 
     background-color: var(--dark-cyan);
-    background-image: url(/assets/images/bg-pattern-top.svg),
-                      url(/assets/images/bg-pattern-bottom.svg);
+    background-image: url(assets/images/bg-pattern-top.svg),
+                      url(assets/images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
     background-size: 65%;
     background-position: right 950px bottom 350px, left 900px top 450px;
